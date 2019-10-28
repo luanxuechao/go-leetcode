@@ -5,6 +5,7 @@ import (
 )
 
 func HasGroupsSizeX(deck []int) bool {
+	size := len(deck)
 	count := make(map[int]int, size)
 	for _, card := range deck {
 		count[card]++
